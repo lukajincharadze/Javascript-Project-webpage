@@ -149,10 +149,17 @@
     align-content: center;
     text-align: center;
     gap: 48px;
+    margin-bottom: 48px;
 }
 
 .section2_title h1 {
     font-size: 36px;
     font-family: 'metropolibold';
+}
 
+.section2_title p {
+    max-width: 480px;
+    width: 100%;
+    color: #8989a2;
+    margin: 0 auto;
 }
