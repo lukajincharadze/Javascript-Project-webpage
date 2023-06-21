@@ -162,4 +162,12 @@
     width: 100%;
     color: #8989a2;
     margin: 0 auto;
+    
+}
+
+.box3_div {
+    padding: 0 240px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
