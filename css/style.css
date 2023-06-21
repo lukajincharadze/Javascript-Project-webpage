@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@font-face {
+    font-family: "metropolis-bold";
+    src: url(/metropolisfonts/metropolis.bold.otf) format('truetype');
+}
 
+@font-face {
+    font-family: "metropolis-medium";
+    src: url(/metropolisfonts/metropolis.medium.otf) format('truetype');
+}
 
 
 .nav_wraper {
@@ -38,7 +46,6 @@
 }
 
 .left_p {
-    /* padding: 10px 35px; */
     color: #722ed1;
     background-color: #f9f0ff;
     max-width: 256px;
@@ -53,4 +60,15 @@
 
 .left_Lmore {
     text-decoration: underline;
+}
+
+.left_h1 {
+    font-size: 48px;
+    font-family: "metropolis-bold";
+}
+
+.left_p_blog {
+    font-size: 18px;
+    font-family: 'metropolis-medium';
+    color: #8989a2;
 }
