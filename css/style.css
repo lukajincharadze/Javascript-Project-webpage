@@ -289,7 +289,7 @@
     width: 100%;
     margin: 0 auto;
     background-image: linear-gradient(#f7f0ff, #e2f1ff);
-    clip-path: polygon(0 25%, 100% 0, 100% 77%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
 }
 
 .section4_div {
@@ -305,7 +305,7 @@
 }
 
 .section4paragraph {
-    max-width: 450px;
+    max-width: 584px;
     width: 100%;
     text-align: center;
     margin-bottom: 16px;
@@ -321,11 +321,13 @@
 }
 
 .profile_P {
-    margin-bottom: 115px;
+    margin-top: 16px;
+    margin-bottom: 55px;
     max-width: 140px;
     width: 100%;
     font-family: 'metropolisbold';
     font-size: 16px;
+    text-align: center;
 }
 
 .section4_top_div {
