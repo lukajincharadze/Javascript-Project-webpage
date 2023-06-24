@@ -578,3 +578,21 @@ form {
 
 
 /* Section 6 FOOTER */
+
+.footer_div_bg {
+    background-color: #fbfcff;
+}
+
+.footer_div { 
+    max-width: 1090px;
+    width: 100%;
+    margin:  0 auto;
+}
+
+.footer_div_6_of_1_p {
+    font-size: 12px;
+    font-family: 'metropolismedium';
+    color: #160637;
+    max-width: 198px;
+    width: 100%;
+}
