@@ -97,6 +97,7 @@
     }
 
     .nav_wraper.active {
+        background-image: none;
         clip-path: none;
         padding: 0;
     }
