@@ -100,6 +100,7 @@
         background-image: none;
         clip-path: none;
         padding: 0;
+        height: 0;
     }
 
     .bar1, .bar2, .bar3 {
