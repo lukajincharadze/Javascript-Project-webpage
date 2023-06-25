@@ -69,20 +69,22 @@
 
 
 
-// BURGER MENU
-let navigation2 = document.querySelector(".navigation2");
-let navigation = document.querySelector(".navigation");
-let nav_logo = document.querySelector(".nav_logo");
-let navigationbg = document.querySelector(".navigation2bg");
-let burger = document.querySelector(".container");
-let nav_wraper = document.querySelector(".nav_wraper");
+// // BURGER MENU
+// let navigation2 = document.querySelector(".navigation2");
+// let navigation = document.querySelector(".navigation");
+// let navblog = document.querySelector(".nav_blog");
+// let nav_logo = document.querySelector(".nav_logo");
+// let navigationbg = document.querySelector(".navigation2bg");
+// let burger = document.querySelector(".container");
+// let nav_wraper = document.querySelector(".nav_wraper");
 
 
-burger.addEventListener("click", function() {
-    navigation2.classList.toggle("active");
-    nav_logo.classList.toggle("active");
-    navigation.classList.toggle("active");
-    navigationbg.classList.toggle("active");
-    nav_wraper.classList.toggle("active");
-    burger.classList.toggle("change");
-})
+// burger.addEventListener("click", function() {
+//     navigation2.classList.toggle("active");
+//     navblog.classList.toggle("active");
+//     nav_logo.classList.toggle("active");
+//     navigation.classList.toggle("active");
+//     navigationbg.classList.toggle("active");
+//     nav_wraper.classList.toggle("active");
+//     burger.classList.toggle("change");
+// })

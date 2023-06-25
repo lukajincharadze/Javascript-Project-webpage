@@ -113,12 +113,14 @@
       
     .change .bar1 {
         transform: translate(0, 9px) rotate(-45deg);
+        background-color: #fff;
     }
     
     .change .bar2 {opacity: 0;}
     
     .change .bar3 {
         transform: translate(0, -9px) rotate(45deg);
+        background-color: #fff;
     }
     
     .navbar-flex {
@@ -138,19 +140,23 @@
         text-align: center;
         display: none;
     }
+
     .navigation2bg.active {
         display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
         z-index: 2;
-        background-color: rgb(33, 156, 156);
+        background-color: #799bba;
         width: 100%;
         height: 100%;
         transform: translate(0);
+        transition: all 0.3s;
     }
+
     .navigation2.active {
         display: flex;
+        transition: all 0.3s;
     }
     
     .navigation2 ul li {
@@ -180,6 +186,10 @@
         top: 40px;
         left: 100px;
         z-index: 100000;
+    }
+
+    .nav_blog.active {
+        margin-top: 108px;
     }
 
     .nav_blog {

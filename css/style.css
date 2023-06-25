@@ -31,7 +31,6 @@
     clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
 }
 
-
 .navigation {
     display: flex;
     justify-content: space-between;
