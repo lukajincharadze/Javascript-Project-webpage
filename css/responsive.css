@@ -259,7 +259,7 @@
 
     .nav_wraper {
         padding: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
 
     }
 
@@ -272,3 +272,19 @@
     }
 }
 
+@media  (max-width: 400px) {
+    .left_h1 {
+        width: 200px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .left_p_blog {
+        width: 232px;
+        margin: 20px auto;
+    }
+
+    .left_box {
+        width: 239px;
+    }
+}
