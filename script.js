@@ -10,8 +10,8 @@ document.getElementById("registration").addEventListener("submit", function(even
     // username
     let username = form.querySelector('[name = "username"]').value;
     
-    if(username.length < 4) {
-        errors.username = "Min 4 letters";
+    if(username.length < 7) {
+        errors.username = "Min 7 letters";
     }
 
     if(username == ""){
