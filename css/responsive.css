@@ -182,6 +182,10 @@
     .left_buttons {
         justify-content: center;
     }
+
+    .signUp_section5 {
+        padding: 0 20px;
+    }
 }
 
 @media  (max-width: 1100px) {
@@ -301,7 +305,53 @@
         max-width: 450px;
         padding-top: 37px;
     }
+
+    .section4_background {
+        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    .section4_div {
+        height: 710px;
+    }
+    .section4_div_brands {
+        padding: 0 20px;
+    }
+}
+
+@media  (max-width: 1000px) {
+    .signUp_h1 {
+        font-size: 25px;
+    }
+
+    .textInLines_div{
+        gap: 15px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .textInLines1 {
+        width: 105px;
+    }
+
+    .signUpBrandspics_Big_div {
+        gap: 30px;
+        padding-right: 0;
+    }
+
+    form {
+        width: 330px;
+        padding: 0 30px;
+        top: -27px;
+    }
+
+    .signUp_purp {
+        width: 380px;
+    }
     
+    .signUp_box2 {
+        margin-left: 20px;
+    }
+
 }
 @media  (max-width: 950px) {
     .box3_div {
@@ -326,35 +376,25 @@
         max-width: 400px;
         padding-top: 51px;
    }
-}
 
-@media  (max-width: 700px) {
-    .circle_div {
-        margin-right: 0;
-    }
-    .circle_big_div {
+   .signUp_section5 {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+   }
+
+   form {
+        max-width: 416px;
+        width: 100%;
+        padding: 0 30px;
+        top: -40px;
     }
 
-    .secproduct {
-        margin: 0 auto;
-        margin-bottom: 20px;
+    .signUp_purp {
+        max-width: 467px;
+        width: 100%;
     }
 
-    .secproduct2 {
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-
-    .secodCircle {
-        margin-top: -23px;
-    }
-
-    .secsric {
-        padding-top: 100px;
+    .signUp_box2 {
+        margin-left: 0;
     }
 }
 
@@ -416,9 +456,51 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
     }
+
+    .section4_div_brands {
+        padding-top: 83px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section4_div {
+        height: 880px;
+    }
+
+    .line2 {
+        display: inline-block;
+        margin-top: -16px;
+    }
 }
 
 @media  (max-width: 700px) {
+    .circle_div {
+        margin-right: 0;
+    }
+    .circle_big_div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .secproduct {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .secproduct2 {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .secodCircle {
+        margin-top: -23px;
+    }
+
+    .secsric {
+        padding-top: 100px;
+    }
     .box3_div {
         flex-direction: column;
         align-items: center;
@@ -439,6 +521,16 @@
 
     .sectit2 {
         text-align: center;
+    }
+
+    .section4paragraph {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    .section4_div {
+        height: 800px;
+        padding-top: 137px;
     }
 }
 
