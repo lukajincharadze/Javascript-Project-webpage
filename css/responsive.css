@@ -39,6 +39,11 @@
         height: 35px;
         font-size: 14px;
     }
+
+    .sectio2_p {
+        max-width: 599px;
+        width: 100%;
+    }
     
     .left_h1 {
         line-height: 1;
@@ -426,6 +431,10 @@
     .signUp_box2 {
         margin-left: 0;
     }
+
+    .footer_div_bg {
+        margin-top: 440px;
+    }
 }
 
 
@@ -504,6 +513,11 @@
 }
 
 @media  (max-width: 700px) {
+    .sectio2_p {
+        max-width: 420px;
+        width: 100%;
+    }
+
     .circle_div {
         margin-right: 0;
     }
@@ -627,7 +641,12 @@
 
 @media  (max-width: 425px) {
     .seccircpic {
-        width: 220px;
+        max-width: 220px;
+        width: 100%;
+    }
+
+    .left_box {
+        width: 300px;
     }
 
     .secodCircle {
@@ -701,10 +720,22 @@
     }
 
     .textInLines1 {
-        width: 85px;
+        max-width: 85px;
+        width: 100%;
     }
 
     .textInLines_div {
         gap: 28px;
+    }
+}
+@media  (max-width: 420px) {
+    .circle_div1_img {
+        width: 340px;
+    }
+}
+
+@media  (max-width: 345px) {
+    .circle_div1_img {
+        width: 250px;
     }
 }

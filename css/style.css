@@ -49,8 +49,13 @@
 }
 
 .li_special {
+    display: flex;
+    align-items: center;
     color: #722ed1;
-    padding: 7px 30px;
+    padding-top: 13px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
     border: 1px solid #722ed1;
     border-radius: 50px;
 }
@@ -157,6 +162,12 @@
     font-size: 16px;
 }
 
+.sectio2_p {
+    max-width: 734px;
+    width: 100%;
+    padding: 0 20px;
+}
+
 .section2_title {
     display: flex;
     flex-direction: column;
@@ -231,6 +242,10 @@
 
 .marginbox3 {
     margin-bottom: 215px;
+}
+
+.circle_div2.active {
+    top: 830px;
 }
 
 .circle_big_div {
