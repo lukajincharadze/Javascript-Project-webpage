@@ -186,6 +186,11 @@
     .signUp_section5 {
         padding: 0 20px;
     }
+
+    .footer_div_bg {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media  (max-width: 1100px) {
@@ -360,6 +365,31 @@
 
     .circle_big_div {
         margin-bottom: 35px;
+    }
+
+    /* .footer_div {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    } */
+    .footer_div {
+        flex-wrap: wrap;
+        max-width: 259px;
+        text-align: center;
+        justify-content: space-between;
+        gap: 35px;
+    }
+
+    .footer_div_6_of_1 {
+        margin: 0 auto;
+    }
+
+    .footer_div_6_of_6 {
+        margin: 0 auto;
+    }
+
+    .footer_div_bg {
+        height: 1000px;
     }
 }
 
