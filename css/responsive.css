@@ -534,6 +534,19 @@
     }
 }
 
+@media  (max-width: 540px) {
+    form {
+        width: 330px;
+        padding: 0 30px;
+        top: -27px;
+    }
+
+    .signUp_purp {
+        width: 380px;
+        margin: 0 auto;
+    }
+    
+}
 
 @media  (max-width: 500px) {
     .right_box img {
@@ -561,6 +574,26 @@
         padding: 0 20px;
     }
 }
+
+@media  (max-width: 435px) {
+    form {
+        height: 500px;
+        width: 300px;
+        padding: 0 30px;
+        top: -27px;
+    }
+
+    .signUp_purp {
+        width: 340px;
+        height: 500px;
+    }
+
+    .fromh1 {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+}
+
 
 @media  (max-width: 425px) {
     .seccircpic {
@@ -608,5 +641,40 @@
 
     .circle_div1_img {
         max-width: 315px;
+    }
+
+    form {
+        height: 470px;
+        width: 234px;
+    }
+
+    .signUp_purp {
+        width: 280px;
+        height: 470px;
+    }
+
+    .fromh1 {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .form_OR {
+        margin: 10px 0;
+    }
+
+    .form_line_div {
+        margin: 12px 0;
+    }
+
+    .textInLines_Text {
+        font-size: 14px;
+    }
+
+    .textInLines1 {
+        width: 85px;
+    }
+
+    .textInLines_div {
+        gap: 28px;
     }
 }
