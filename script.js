@@ -17,7 +17,7 @@ function validateEmail(email) {
   
   let formElement = document.getElementById("registration");
   
-  formElement.addEventListener("submit", function(event) {
+formElement.addEventListener("submit", function(event) {
     event.preventDefault();
   
     let errors = {};
@@ -39,8 +39,6 @@ function validateEmail(email) {
       errors.password = "Password should be at least 8 characters long";
     } else if (!validatePassword(password)) {
       errors.password = "At least one lowercase letter, uppercase letter, and digit";
-    } else if (validatePassword(password)) {
-      errors.password = "";
     }
   
     if (password !== password2) {
@@ -55,8 +53,12 @@ function validateEmail(email) {
       }
     }
   
+ 
     if (Object.keys(errors).length === 0) {
+      console.log("Submitting form...");
       form.submit();
+    } else {
+      console.log("Form has errors. Not submitting.");
     }
   });
   
