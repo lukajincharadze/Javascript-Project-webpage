@@ -1,12 +1,16 @@
-// FORM VALIDATION
-
-
+// Function to validate the email address
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
-}
+  }
 
-document.getElementById("registration").addEventListener("submit", function(event) {
+  // Function to validate the password
+  function validatePassword(password) {
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()])[A-Za-z\d!@#$%^&*()]{8,}$/;
+    return passwordRegex.test(password);
+  }
+
+  document.getElementById("registration").addEventListener("submit", function(event) {
     event.preventDefault();
 
     let errors = {};
@@ -26,12 +30,10 @@ document.getElementById("registration").addEventListener("submit", function(even
     let password = form.querySelector('[name="password"]').value;
     let password2 = form.querySelector('[name="password2"]').value;
 
-    if (password.length < 4) {
-      errors.password = "Invalid Password";
-    }
-
-    if (password == '') {
-        errors.password = "Enter Password";
+    if (password.length < 8) {
+      errors.password = "Password should be at least 8 characters long";
+    } else if (!validatePassword(password)) {
+      errors.password = "Password should contain at least one lowercase letter, one uppercase letter, one digit, and one special character";
     }
 
     if (password !== password2) {
@@ -51,43 +53,41 @@ document.getElementById("registration").addEventListener("submit", function(even
     if (Object.keys(errors).length === 0) {
       form.submit();
     }
-});
+  });
 
-
-
-// Password SHOW/HIDE
-function togglePasswordVisibility() {
+  // Password SHOW/HIDE
+  function togglePasswordVisibility() {
     var passwordInput = document.getElementById("mypassword");
     var showPasswordIcon = document.getElementById("togglePassword");
-  
+
     if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        showPasswordIcon.innerHTML = "&#x1f441;";
+      passwordInput.type = "text";
+      showPasswordIcon.innerHTML = "&#x1f441;";
     } else {
-        passwordInput.type = "password";
-        showPasswordIcon.innerHTML = "&#xf070;";
+      passwordInput.type = "password";
+      showPasswordIcon.innerHTML = "&#xf070;";
     }
-}
+  }
 
-togglePasswordVisibility() 
+  togglePasswordVisibility();
 
+  // Clear the email error message when the user starts typing
+  let usernameInput = document.getElementById('user');
+  let errorUsername = document.getElementById('error_username');
 
-// END FORM VALIDATION
+  usernameInput.addEventListener('input', function() {
+    errorUsername.textContent = '';
+  });
 
-
-
-
-
-// BURGER MENU
-let navigation2 = document.querySelector(".navigation2");
-let navigation = document.querySelector(".navigation");
-let navblog = document.querySelector(".nav_blog");
-let nav_logo = document.querySelector(".nav_logo");
-let navigationbg = document.querySelector(".navigation2bg");
-let burger = document.querySelector(".container");
-let nav_wraper = document.querySelector(".nav_wraper");
-let circle_img = document.querySelector(".circle_div2");
-
+  // BURGER MENU
+  let navigation2 = document.querySelector(".navigation2");
+  let navigation = document.querySelector(".navigation");
+  let navblog = document.querySelector(".nav_blog");
+  let nav_logo = document.querySelector(".nav_logo");
+  let navigationbg = document.querySelector(".navigation2bg");
+  let burger = document.querySelector(".container");
+  let nav_wraper = document.querySelector(".nav_wraper");
+  let circle_img = document.querySelector(".circle_div2");
 
 burger.addEventListener("click", function() {
     circle_img.classList.toggle("active");
@@ -98,4 +98,4 @@ burger.addEventListener("click", function() {
     navigationbg.classList.toggle("active");
     nav_wraper.classList.toggle("active");
     burger.classList.toggle("change");
-})
+});
