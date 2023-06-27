@@ -1,6 +1,12 @@
 // FORM VALIDATION
 
-document.getElementById("registration").addEventListener("submit", function(event){
+
+function validateEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+document.getElementById("registration").addEventListener("submit", function(event) {
     event.preventDefault();
 
     let errors = {};
@@ -8,43 +14,46 @@ document.getElementById("registration").addEventListener("submit", function(even
     let form = event.target;
 
     // username
-    let username = form.querySelector('[name = "username"]').value;
-    
-    if(username.length < 7) {
-        errors.username = "Min 7 letters";
-    }
+    let username = form.querySelector('[name="username"]').value;
 
-    if(username == ""){
-        errors.username = "Enter your Email";
+    if (username === "") {
+      errors.username = "Enter your Email";
+    } else if (!validateEmail(username)) {
+      errors.username = "Invalid email format";
     }
 
     // password
-    let password = form.querySelector('[name = "password"]').value;
-    let password2 = form.querySelector('[name = "password2"]').value;
+    let password = form.querySelector('[name="password"]').value;
+    let password2 = form.querySelector('[name="password2"]').value;
 
-    if (password.length < 5) {
-        errors.password = "Invalid Password";
+    if (password.length < 4) {
+      errors.password = "Invalid Password";
     }
 
-    if (password != password2) {
-        errors.password2 = "Passwords don't match";
+    if (password == '') {
+        errors.password = "Enter Password";
     }
 
+    if (password !== password2) {
+      errors.password2 = "Passwords don't match";
+    }
 
     // errors
     for (let item in errors) {
+      let errorPlaceholder = document.getElementById("error_" + item);
 
-        let errorPlaceholder = document.getElementById("error_" + item);
+      // if error happens
+      if (errorPlaceholder) {
+        errorPlaceholder.textContent = errors[item];
+      }
+    }
 
-        // if error happends
-        if(errorPlaceholder) {
-            errorPlaceholder.textContent = errors[item];
-        }
+    if (Object.keys(errors).length === 0) {
+      form.submit();
     }
-    if(Object.keys(errors).length == 0) {
-        form.submit();
-    }
-})
+});
+
+
 
 // Password SHOW/HIDE
 function togglePasswordVisibility() {
