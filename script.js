@@ -2,11 +2,9 @@
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
-}
-
-  // Function to validate the password
+  }
+  
   function validatePassword(password) {
-    // Password should contain at least one lowercase letter, one uppercase letter, one digit, and one special character
     const lowercaseRegex = /[a-z]/;
     const uppercaseRegex = /[A-Z]/;
     const digitRegex = /\d/;
@@ -16,59 +14,56 @@ function validateEmail(email) {
       digitRegex.test(password)
     );
   }
-
-  document.getElementById("registration").addEventListener("submit", function(event) {
+  
+  let formElement = document.getElementById("registration");
+  
+  formElement.addEventListener("submit", function(event) {
     event.preventDefault();
-
+  
     let errors = {};
-
+  
     let form = event.target;
-
-    // username
+  
     let username = form.querySelector('[name="username"]').value;
-
+  
     if (username === "") {
       errors.username = "Enter your Email";
     } else if (!validateEmail(username)) {
       errors.username = "Invalid email format";
     }
-
-    // password
+  
     let password = form.querySelector('[name="password"]').value;
     let password2 = form.querySelector('[name="password2"]').value;
-
+  
     if (password.length < 8) {
       errors.password = "Password should be at least 8 characters long";
     } else if (!validatePassword(password)) {
-      errors.password = "at least one lowercase letter, uppercase, digit";
+      errors.password = "At least one lowercase letter, uppercase letter, and digit";
     } else if (validatePassword(password)) {
-        errors.password = "";
+      errors.password = "";
     }
-
+  
     if (password !== password2) {
       errors.password2 = "Passwords don't match";
     }
-
-    // errors
+  
     for (let item in errors) {
       let errorPlaceholder = document.getElementById("error_" + item);
-
-      // if error happens
+  
       if (errorPlaceholder) {
         errorPlaceholder.textContent = errors[item];
       }
     }
-
+  
     if (Object.keys(errors).length === 0) {
       form.submit();
     }
   });
-
-  // Password SHOW/HIDE
+  
   function togglePasswordVisibility() {
     var passwordInput = document.getElementById("mypassword");
     var showPasswordIcon = document.getElementById("togglePassword");
-
+  
     if (passwordInput.type === "password") {
       passwordInput.type = "text";
       showPasswordIcon.innerHTML = "&#x1f441;";
@@ -77,30 +72,28 @@ function validateEmail(email) {
       showPasswordIcon.innerHTML = "&#xf070;";
     }
   }
-
-
+  
   togglePasswordVisibility();
-
-// Clear the email error message when the user starts typing
-let usernameInput = document.getElementById('user');
-let errorUsername = document.getElementById('error_username');
-let passwordInput = document.getElementById('mypassword');
-let passwordInput2 = document.getElementById('mypassword2');
-let errorPassword = document.getElementById('error_password');
-let errorPassword2 = document.getElementById('error_password2');
-
-usernameInput.addEventListener('input', function() {
+  
+  let usernameInput = document.getElementById('user');
+  let errorUsername = document.getElementById('error_username');
+  let passwordInput = document.getElementById('mypassword');
+  let passwordInput2 = document.getElementById('mypassword2');
+  let errorPassword = document.getElementById('error_password');
+  let errorPassword2 = document.getElementById('error_password2');
+  
+  usernameInput.addEventListener('input', function() {
     errorUsername.textContent = '';
-});
-
-passwordInput.addEventListener('input', function() {
+  });
+  
+  passwordInput.addEventListener('input', function() {
     errorPassword.textContent = '';
-});
-
-passwordInput2.addEventListener('input', function() {
+  });
+  
+  passwordInput2.addEventListener('input', function() {
     errorPassword2.textContent = '';
-});
-
+  });
+  
 
 // BURGER MENU
 let navigation2 = document.querySelector(".navigation2");
