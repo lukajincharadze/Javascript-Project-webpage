@@ -347,7 +347,7 @@
         padding-right: 0;
     }
 
-    form {
+    .form1 {
         width: 330px;
         padding: 0 30px;
         top: -27px;
@@ -371,11 +371,6 @@
         margin-bottom: 35px;
     }
 
-    /* .footer_div {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    } */
     .footer_div {
         flex-wrap: wrap;
         max-width: 259px;
@@ -415,7 +410,7 @@
         flex-direction: column;
    }
 
-   form {
+   .form1 {
         max-width: 416px;
         width: 100%;
         padding: 0 30px;
@@ -578,7 +573,7 @@
 }
 
 @media  (max-width: 540px) {
-    form {
+    .form1 {
         width: 330px;
         padding: 0 30px;
         top: -27px;
@@ -619,7 +614,7 @@
 }
 
 @media  (max-width: 435px) {
-    form {
+    .form1 {
         height: 500px;
         width: 300px;
         padding: 0 30px;
@@ -691,7 +686,7 @@
         max-width: 315px;
     }
 
-    form {
+    .form1 {
         height: 470px;
         width: 234px;
     }
