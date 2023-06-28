@@ -2,9 +2,9 @@
 function validateEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
-  }
+}
   
-  function validatePassword(password) {
+function validatePassword(password) {
     const lowercaseRegex = /[a-z]/;
     const uppercaseRegex = /[A-Z]/;
     const digitRegex = /\d/;
@@ -13,9 +13,9 @@ function validateEmail(email) {
       uppercaseRegex.test(password) &&
       digitRegex.test(password)
     );
-  }
+}
   
-  let formElement = document.getElementById("registration");
+let formElement = document.getElementById("registration");
   
 formElement.addEventListener("submit", function(event) {
     event.preventDefault();
@@ -62,7 +62,7 @@ formElement.addEventListener("submit", function(event) {
     }
   });
   
-  function togglePasswordVisibility() {
+function togglePasswordVisibility() {
     var passwordInput = document.getElementById("mypassword");
     var showPasswordIcon = document.getElementById("togglePassword");
   
@@ -73,7 +73,7 @@ formElement.addEventListener("submit", function(event) {
       passwordInput.type = "password";
       showPasswordIcon.innerHTML = "&#xf070;";
     }
-  }
+}
   
   togglePasswordVisibility();
   
