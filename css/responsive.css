@@ -726,6 +726,22 @@
     .textInLines_div {
         gap: 28px;
     }
+
+    .error_username {
+        padding-top: 2px;
+        font-size: 12px;
+    }
+
+    .error_password {
+        padding-top: 3px;
+        font-size: 12px;
+    }
+
+    .error_password2 {
+        padding-top: 2px;
+        font-size: 12px;
+    }
+
 }
 @media  (max-width: 420px) {
     .circle_div1_img {

@@ -36,9 +36,9 @@ formElement.addEventListener("submit", function(event) {
     let password2 = form.querySelector('[name="password2"]').value;
   
     if (password.length < 8) {
-      errors.password = "Password should be at least 8 characters long";
+      errors.password = "Should be at least 8 characters long";
     } else if (!validatePassword(password)) {
-      errors.password = "At least one lowercase letter, uppercase letter, and digit";
+      errors.password = "At least one uppercase letter, digit and lowercase letter, ";
     }
   
     if (password !== password2) {
@@ -79,10 +79,14 @@ function togglePasswordVisibility() {
   
   let usernameInput = document.getElementById('user');
   let errorUsername = document.getElementById('error_username');
+  errorUsername.classList.add('error_username');
   let passwordInput = document.getElementById('mypassword');
   let passwordInput2 = document.getElementById('mypassword2');
   let errorPassword = document.getElementById('error_password');
+  errorPassword.classList.add('error_password');
   let errorPassword2 = document.getElementById('error_password2');
+  errorPassword2.classList.add('error_password2');
+
   
   usernameInput.addEventListener('input', function() {
     errorUsername.textContent = '';
