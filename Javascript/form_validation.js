@@ -61,22 +61,8 @@ formElement.addEventListener("submit", function(event) {
       console.log("Form has errors. Not submitting.");
     }
   });
-  
-function togglePasswordVisibility() {
-    var passwordInput = document.getElementById("mypassword");
-    var showPasswordIcon = document.getElementById("togglePassword");
-  
-    if (passwordInput.type === "password") {
-      passwordInput.type = "text";
-      showPasswordIcon.innerHTML = "&#x1f441;";
-    } else {
-      passwordInput.type = "password";
-      showPasswordIcon.innerHTML = "&#xf070;";
-    }
-}
-  
-  togglePasswordVisibility();
-  
+
+
   let usernameInput = document.getElementById('user');
   let errorUsername = document.getElementById('error_username');
   errorUsername.classList.add('error_username');
@@ -100,41 +86,3 @@ function togglePasswordVisibility() {
     errorPassword2.textContent = '';
   });
 
-
-
-
-  
-  let newsletter_input = document.getElementById('newsletter_input');
-  let newsletter_send = document.getElementById('newsletter_send');
-  
-  newsletter_send.addEventListener('click', function(event) {
-    if (newsletter_input.value !== '') {
-      event.target.closest('form').submit();
-      console.log('Value is not empty');
-    } else {
-      event.preventDefault();
-      console.log('Value is empty');
-    }
-  });
-  
-
-// BURGER MENU
-let navigation2 = document.querySelector(".navigation2");
-let navigation = document.querySelector(".navigation");
-let navblog = document.querySelector(".nav_blog");
-let nav_logo = document.querySelector(".nav_logo");
-let navigationbg = document.querySelector(".navigation2bg");
-let burger = document.querySelector(".container");
-let nav_wraper = document.querySelector(".nav_wraper");
-let circle_img = document.querySelector(".circle_div2");
-
-burger.addEventListener("click", function() {
-    circle_img.classList.toggle("active");
-    navigation2.classList.toggle("active");
-    navblog.classList.toggle("active");
-    nav_logo.classList.toggle("active");
-    navigation.classList.toggle("active");
-    navigationbg.classList.toggle("active");
-    nav_wraper.classList.toggle("active");
-    burger.classList.toggle("change");
-});
