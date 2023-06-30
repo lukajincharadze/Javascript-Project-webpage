@@ -7,8 +7,10 @@
     <script src="https://kit.fontawesome.com/f68d594a8a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
         <div class="nav_wraper">
@@ -166,9 +168,21 @@
 
                 <div class="slidertext">
                     <h1>Our Lovely Team</h1>
+                    <p>click or swipe</p>
                 </div>
 
-                <div class="slider-wraper">
+                <div class="slider_div_padding">
+                    <div class="slider_div">
+                        <div><img src="img/business0.jpg" alt="bimg"></div>
+                        <div><img src="img/business1.jpg" alt="bimg"></div>
+                        <div><img src="img/business2.jpg" alt="bimg"></div>
+                        <div><img src="img/business3.jpg" alt="bimg"></div>
+                        <div><img src="img/business4.jpg" alt="bimg"></div>
+                    </div>
+                </div>
+                
+
+                <!-- <div class="slider-wraper">
                     <button class="arrowslider arrow-left" id="arrow-left"> < </button>
             
                     <div class="slider-content" id="slider-content">
@@ -176,7 +190,7 @@
                     </div>
             
                     <button class="arrowslider arrow-right" id="arrow-right"> > </button>
-                </div>
+                </div> -->
 
                 <div class="circle_big_div secbig">
                     <div class="secodCircle secsicw2">
@@ -356,5 +370,15 @@
         <script src="./Javascript/newsletter.js"></script>
         <script src="./Javascript/togglepass.js"></script>
         <script src="./Javascript/slider.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script type="text/javascript">
+            $('.slider_div').slick({
+                // autoplay: true,
+                // autoplaySpeed: 4000,
+                dots:true
+            });
+        </script>
 </body>
 </html>
