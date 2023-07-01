@@ -327,6 +327,26 @@
     }
 }
 
+@media  (max-width: 1050px) {
+    #list {
+        flex-wrap: wrap;
+        width: 565px;
+        margin: 0 auto;
+    }
+
+    #list li {
+        margin-bottom: 30px;
+    }
+    
+    .servertext {
+        margin-bottom: 25px;
+    }
+
+    .server_div_for_buttons {
+        margin-top: -35px;
+    }
+}
+
 @media  (max-width: 1000px) {
     .signUp_h1 {
         font-size: 25px;
@@ -611,7 +631,28 @@
     .slick-dots {
         bottom: -40px;
     }
+    .marginbox3 {
+        margin-bottom: 110px;
+    }
 }
+
+@media  (max-width: 600px) {
+    #list {
+        width: 371px;
+    }
+
+    .server_div_for_buttons {
+        width: 350px;
+    }
+    .prev, .next {
+        font-size: 14px;
+    }
+
+    .prev {
+        max-width: 160px;
+    }
+}
+
 
 @media  (max-width: 540px) {
     .form1 {
@@ -721,16 +762,21 @@
     .sectit2 {
         text-align: center;
     }
-
+    
     .circle_div {
         width: 230px;
     }
-
+    
     .secsric {
         padding-top: 100px;
     }
 }
 
+@media  (max-width: 420px) {
+    .circle_div1_img {
+        width: 340px;
+    }
+}
 
 @media  (max-width: 400px) {
     .left_h1 {
@@ -803,11 +849,44 @@
         font-size: 12px;
     }
 
-}
-@media  (max-width: 420px) {
-    .circle_div1_img {
-        width: 340px;
+    #list {
+        max-width: 371px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
+
+    .image-block {
+        width: 60px;
+        height: 60px;
+    }
+    .image-block_email {
+        font-size: 10px;
+    }
+
+    #list li {
+        width: 140px;
+        height: 135px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    .server_div_for_buttons {
+        width: 275px;
+    }
+    .prev, .next {
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .next {
+        max-width: 120px;
+    }
+
+    .prev {
+        max-width: 140px;
+    }
+
+
 }
 
 @media  (max-width: 345px) {
