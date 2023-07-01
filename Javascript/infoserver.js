@@ -59,7 +59,7 @@ function getUsersInfo(page) {
 
 
     let requist = new XMLHttpRequest();
-    requist.addEventListener('load',render);
+    requist.addEventListener('load', render);
     requist.addEventListener('error', error);
     requist.open('GET', 'https://reqres.in/api/users?page=' + page);
     requist.send();
