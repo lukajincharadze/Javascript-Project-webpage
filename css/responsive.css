@@ -270,6 +270,7 @@
     }
     
     .navigation2 ul li {
+        cursor: pointer;
         line-height: 2.2;
         font-size: 20px;
         font-family: 'Poppins', sans-serif;
