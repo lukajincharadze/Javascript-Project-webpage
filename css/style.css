@@ -46,6 +46,7 @@
 
 .navbar_wraper ul li{
     margin-left: 45px;
+    cursor: pointer;
 }
 
 .li_special {
@@ -100,6 +101,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
+    cursor: pointer;
 }
 
 .left_purp_Button, .left_white_Button {
@@ -154,6 +156,7 @@
     margin: 0 auto;
     border-radius: 22px;
     margin-bottom: 32px;
+    cursor: pointer;
 }
 
 .whyqubly_ p {
@@ -285,6 +288,7 @@
 }
 
 .secproduct {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -298,6 +302,7 @@
 
 }
 .secproduct2 {
+    cursor: pointer;
     color: #722ed1;
     font-family: 'metropolismedium', sans-serif;
     width: 216px;
@@ -650,10 +655,12 @@
 }
 
 .footer_div_6 h1 {
+    cursor: pointer;
     font-family: 'metropolisbold', sans-serif;
 }
 
 .footer_div_6 ul li {
+    cursor: pointer;
     font-family: 'metropolismedium', sans-serif;
     font-size: 12px;
 }
