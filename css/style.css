@@ -127,7 +127,6 @@ html {
 }
 
 .left_white_Button {
-    
     max-width: 168px;
     width: 100%;
     height: 48px;
@@ -138,6 +137,23 @@ html {
     align-items: center;
     border-radius: 50px;
 }
+
+
+.leftBBs {
+    color: inherit;
+}
+
+.left_purp_Button:hover, .left_white_Button:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+.left_purp_Button:active, .left_white_Button:active {
+    transform: translateY(2px);
+    transition: all 0.2s ease;
+}
+
+
 
 .nav_blog {
     display: flex;
