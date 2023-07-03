@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/costumers.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -23,7 +24,16 @@
         
                     <div class="navbar_wraper">
                         <ul>
-                            <li>About <i class="fa-solid fa-chevron-down arrow"></i></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn"><span>About</span> <i class="fa-solid fa-chevron-down arrow"></i></button>
+                                    <div class="dropdown-content">
+                                      <a href="#ourTeam">Our Team</a>
+                                      <a href="#happyCostumers">Happy costumers</a>
+                                      <a href="#newsletter_send">Newsletter</a>
+                                    </div>
+                                </div> 
+                            </li>
                             <li>Pricing</li>
                             <li>Contact Us</li>
                             <li>Login</li>
@@ -37,7 +47,16 @@
                     <div class="navigation2bg">
                         <nav class="navigation2">
                             <ul>
-                                <li>About</li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="dropbtn dropbtn2"><span>About</span> <i class="fa-solid fa-chevron-down arrow"></i></button>
+                                        <div class="dropdown-content dropdown_content2">
+                                          <a class="dropdown_content2_a" href="#ourTeam">Our Team</a>
+                                          <a class="dropdown_content2_a" href="#happyCostumers">Happy costumers</a>
+                                          <a class="dropdown_content2_a" href="#newsletter_send">Newsletter</a>
+                                        </div>
+                                    </div> 
+                                </li>
                                 <li>Pricing</li>
                                 <li>Contact Us</li>
                                 <li>Login</li>
@@ -135,7 +154,7 @@
                         </span>
                         <div class="box3_1_blog h1">
                             <h1>Valuable business insights</h1>
-                            <p>
+                            <p id="happyCostumers">
                                 Collect processed & cleansed data that is ready 
                                 to be analyzed to gather valuable business insights
                             </p>
@@ -177,7 +196,7 @@
                         </div>
                         <div class="section2_title secondtitle">
                             <h1 class="section2_title_h1">Launch with the best</h1>
-                            <p class="sectit2"> 
+                            <p id="ourTeam" class="sectit2"> 
                                 A centralized platform that intergrates millions of data 
                                 sources using Big Data ELD (Extract, Load & Transform)
                                 that leaves no data behind
@@ -375,6 +394,7 @@
 
 
         <script src="./Javascript/burger.js"></script>
+        <script src="./Javascript/burg_dropdown.js"></script>
         <script src="./Javascript/form_validation.js"></script>
         <script src="./Javascript/newsletter.js"></script>
         <script src="./Javascript/togglepass.js"></script>

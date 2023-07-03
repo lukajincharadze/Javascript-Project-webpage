@@ -17,6 +17,10 @@
     src: url(../fonts/PierSans-Light.otf) format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbvar-flex {
     display: none;
 }
