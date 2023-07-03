@@ -7,14 +7,19 @@
 }
 
 #list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .image-block {
     height: 80px;
     width: 80px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 50%;
     border: 2px solid #722ed1;
     display: block;
@@ -31,12 +36,18 @@
     font-family: 'metropolisregular';
     margin-left: 10px;
     margin-right: 10px;
+    -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
+    transition: background-color 0.2s, -webkit-transform 0.2s;
+    -o-transition: transform 0.2s, background-color 0.2s;
     transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.2s, background-color 0.2s, -webkit-transform 0.2s;
 }
 
 #list li:hover {
     background-color: rgba(255, 200, 252, 0.3);
-    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
 }
 
 .image-block_title {
@@ -50,17 +61,32 @@
 }
 
 .li_div li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .server_div_for_buttons {
     padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 400px;
     width: 100%;
     margin: 0 auto;
@@ -83,22 +109,41 @@
     height: 40px;
     background-color: #fff;
     color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 50px;
     font-family: 'piersanslight';
-    box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.071);
+    -webkit-box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.071);
+            box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.071);
+    -webkit-transition: background-color 0.2s, -webkit-transform 0.2s;
+    transition: background-color 0.2s, -webkit-transform 0.2s;
+    -o-transition: transform 0.2s, background-color 0.2s;
     transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.2s, background-color 0.2s, -webkit-transform 0.2s;
 }
 
 .prev:hover, .next:hover {
     background-color: #f6e9ff;
-    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+            transform: translateY(-2px);
 }
 
 .prev:active, .next:active {
     background-color: #fbf5ff;
-    transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+        -ms-transform: translateY(2px);
+            transform: translateY(2px);
+    -webkit-transition: background-color 0.1s, -webkit-transform 0.1s;
+    transition: background-color 0.1s, -webkit-transform 0.1s;
+    -o-transition: transform 0.1s, background-color 0.1s;
     transition: transform 0.1s, background-color 0.1s;
+    transition: transform 0.1s, background-color 0.1s, -webkit-transform 0.1s;
 }

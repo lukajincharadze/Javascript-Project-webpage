@@ -150,7 +150,9 @@
     }
 
     .circle_big_div {
-        justify-content: space-evenly;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
     }
 
     .secsicw2 {
@@ -166,7 +168,10 @@
 
 @media  (max-width: 1150px) {
     .nav_blog {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         text-align: center;
         position: relative;
         z-index: -5;
@@ -185,7 +190,9 @@
     }
 
     .left_buttons {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .signUp_section5 {
@@ -208,8 +215,11 @@
     }
 
     .nav_wraper.active {
-        clip-path: none;
+        -webkit-clip-path: none;
+                clip-path: none;
         padding: 0;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
@@ -218,56 +228,92 @@
         height: 3px;
         background-color: #000;
         margin: 6px 0;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
         transition: 0.4s;
     }
       
     .change .bar1 {
-        transform: translate(0, 9px) rotate(-45deg);
+        -webkit-transform: translate(0, 9px) rotate(-45deg);
+            -ms-transform: translate(0, 9px) rotate(-45deg);
+                transform: translate(0, 9px) rotate(-45deg);
         background-color: #fff;
     }
     
     .change .bar2 {opacity: 0;}
     
     .change .bar3 {
-        transform: translate(0, -9px) rotate(45deg);
+        -webkit-transform: translate(0, -9px) rotate(45deg);
+            -ms-transform: translate(0, -9px) rotate(45deg);
+                transform: translate(0, -9px) rotate(45deg);
         background-color: #fff;
     }
     
     .navbar-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     
     .navigation.active {
         margin-bottom: -13px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
     
     .navigation2 {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
         display: none;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
     .navigation2bg.active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         position: absolute;
         z-index: 2;
         background-color: #799bba;
         width: 100%;
         height: 100%;
-        transform: translate(0);
+        -webkit-transform: translate(0);
+            -ms-transform: translate(0);
+                transform: translate(0);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
     .navigation2.active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
     
@@ -289,7 +335,9 @@
     }
 
     .dropdown-content {
-        transform: translateX(-40px);
+        -webkit-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+                transform: translateX(-40px);
     }
 
     .dropdown-content a {
@@ -307,6 +355,8 @@
 
     .nav_logo.active {
         display: none;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
@@ -321,6 +371,8 @@
 
     .nav_blog.active {
         margin-top: 108px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
     }
 
@@ -338,7 +390,8 @@
     }
 
     .section4_background {
-        clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+        -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+                clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
     }
 
     .section4_div {
@@ -351,7 +404,8 @@
 
 @media  (max-width: 1050px) {
     #list {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 565px;
         margin: 0 auto;
     }
@@ -414,10 +468,13 @@
     }
 
     .footer_div {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         max-width: 259px;
         text-align: center;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         gap: 35px;
     }
 
@@ -449,7 +506,10 @@
    }
 
    .signUp_section5 {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
    }
 
    .form1 {
@@ -506,11 +566,15 @@
     }
 
     .change .bar1 {
-        transform: translate(0, 8px) rotate(-45deg);
+        -webkit-transform: translate(0, 8px) rotate(-45deg);
+            -ms-transform: translate(0, 8px) rotate(-45deg);
+                transform: translate(0, 8px) rotate(-45deg);
     }
     
     .change .bar3 {
-        transform: translate(0, -8px) rotate(45deg);
+        -webkit-transform: translate(0, -8px) rotate(45deg);
+            -ms-transform: translate(0, -8px) rotate(45deg);
+                transform: translate(0, -8px) rotate(45deg);
     }
 
     .nav_blog {
@@ -528,13 +592,17 @@
 
     .nav_wraper {
         padding: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
     }
 
     .section4_div_brands {
         padding-top: 83px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         gap: 30px;
     }
 
@@ -558,9 +626,16 @@
         margin-right: 0;
     }
     .circle_big_div {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
     }
 
@@ -582,9 +657,16 @@
         padding-top: 100px;
     }
     .box3_div {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
         gap: 50px;
     }
@@ -626,7 +708,8 @@
    
     .slider_div {
         max-width: 400px;
-        box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.194);
+        -webkit-box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.194);
+                box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.194);
     }
 
     .slick-next:before, .slick-prev:before {
@@ -701,7 +784,8 @@
 
     .nav_wraper {
         padding: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+                clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
     }
 
     .container {
@@ -729,7 +813,8 @@
    
     .slider_div {
         max-width: 350px;
-        box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.194);
+        -webkit-box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.194);
+                box-shadow: 0px 5px 14px 3px rgba(0, 0, 0, 0.194);
     }
 
 }
@@ -874,8 +959,12 @@
     #list {
         max-width: 371px;
         width: 100%;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .image-block {
@@ -909,7 +998,8 @@
     }
 
     #list {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         width: 326px;
         margin: 0 auto;
     }
