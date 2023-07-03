@@ -25,13 +25,8 @@ html {
     display: none;
 }
 
-.navigation {
-    margin-top: 24px;
-
-}
-
 .nav_wraper {
-    padding: 0 240px;
+    padding: 24px 240px;
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2f1ff));
     background-image: -o-linear-gradient(#fff, #e2f1ff);
