@@ -906,3 +906,7 @@ html {
 #newsletter_send {
     cursor: pointer;
 }
+
+.nav_wraper {
+    background-color: red;
+}
