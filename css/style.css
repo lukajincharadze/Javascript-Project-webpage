@@ -26,7 +26,7 @@ html {
 }
 
 .nav_wraper {
-    padding: 24px 240px;
+    padding: 0px 240px;
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e2f1ff));
     background-image: -o-linear-gradient(#fff, #e2f1ff);
@@ -905,8 +905,4 @@ html {
 
 #newsletter_send {
     cursor: pointer;
-}
-
-.nav_wraper {
-    background-color: red;
 }
