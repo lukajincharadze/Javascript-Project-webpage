@@ -111,7 +111,6 @@ html {
 .left_purp_Button, .left_white_Button {
     font-family: 'piersanslight';
     box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.071);
-
 }
 
 .left_purp_Button {
@@ -124,6 +123,10 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+}
+
+.left_purp_Button span {
+    color: #fff;
 }
 
 .left_white_Button {
