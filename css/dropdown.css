@@ -59,3 +59,12 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+.dropdownli_sec {
+  height: 44px;
+  margin-bottom: 50px;
+}
+
+.dropdownlisec_nth2 {
+  margin-bottom: 0;
+}

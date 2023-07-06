@@ -68,13 +68,18 @@ html {
   user-select: none;
 }
 
-.navbar_wraper ul li {
+.navbar_wraper ul a li {
   margin-left: 45px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: #000;
+}
+
+.navbar_wraper ul li:nth-last-child(3) {
+  color: #722ed1;
 }
 
 .li_special {
@@ -92,6 +97,7 @@ html {
   border: 1px solid #722ed1;
   border-radius: 50px;
   user-select: none;
+  margin-left: 45px;
 }
 
 .left_p {
