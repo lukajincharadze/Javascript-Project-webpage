@@ -1,1 +1,3 @@
 # Javascript-Project-webpage
+
+In this Project, I've used many of JS logic's, In this Webpage I implemented slider functionality, burger menu also Cookies, information from server, fully responsive to all devices and many more...
